@@ -14,7 +14,7 @@ def get_filters():
     while True:
         city = input('Would you like to see data for chicago , new york city, or washington:  ').lower()
         if city not in CITY_DATA:
-            print('please enter the correct city name')
+            print('please enter a valid city name')
         else:
             break
     # get user input for month (all, january, february, ... , june)
@@ -86,17 +86,14 @@ def time_stats(df):
 
     # display the most common month
     common_month = df['month'].mode()[0]
-    print('Most common month:', common_month)
 
     # display the most common day of week
     common_day = df['day_of_week'].mode()[0]
-    print('Most common day: ', common_day )
 
     # display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
 
     common_hour = df['hour'].mode()[0]
-    print('Most common start hour: ', common_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
