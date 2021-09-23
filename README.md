@@ -20,7 +20,7 @@ End Station (e.g., Sedgwick St & North Ave) <B>
 User Type (Subscriber or Customer) <B>
  <B>
  Analysis: <B>
- The project focused on analysing popular times of travel, stations and trips in addition to trips duration and user information. <B>
+ The project focused on analyse popular times of travel, stations and trips in addition to trips duration and user information. <B>
  <B>
 
 ### Files used
